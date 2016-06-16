@@ -1,0 +1,8 @@
+rootProject.name = 'cloud-turbine'
+include 'foo'
+include 'bar'
+include 'baz'
+include 'data'
+include 'dashboard'
+include 'turbine'
+

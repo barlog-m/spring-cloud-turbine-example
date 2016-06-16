@@ -1,0 +1,25 @@
+server:
+  port: 8050
+
+spring:
+  main:
+    banner_mode: off
+  cloud:
+    consul:
+      enabled: true
+      host: http://docker.local
+      discovery:
+        instance-id: ${spring.application.name}
+  output:
+    ansi:
+      enabled: always
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 8000
+
+logging:
+  level:
+    root: INFO
+
+eureka:
+  client:
+    enabled: false

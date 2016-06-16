@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  main:
+    banner_mode: off
+  cloud:
+    consul:
+      host: http://docker.local
+      discovery:
+        instance-id: ${spring.application.name}
+  output:
+    ansi:
+      enabled: always
+
+logging:
+  level:
+    root: INFO
+
+eureka:
+  client:
+    enabled: false

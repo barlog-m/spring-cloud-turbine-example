@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: turbine
+
+logging:
+  level:
+    root: ERROR

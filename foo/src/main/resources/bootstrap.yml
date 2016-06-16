@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: foo
+
+logging:
+  level:
+    root: ERROR

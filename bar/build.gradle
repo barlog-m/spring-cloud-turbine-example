@@ -1,0 +1,20 @@
+dependencies {
+	compile project(':data')
+
+	compile 'com.fasterxml.jackson.module:jackson-module-kotlin:2.6.6'
+	compile 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.6.6'
+
+	compile('org.springframework.boot:spring-boot-starter-web') {
+		exclude module: 'spring-boot-starter-tomcat'
+	}
+	compile 'org.springframework.boot:spring-boot-starter-undertow'
+	compile 'org.springframework.boot:spring-boot-starter-actuator'
+
+	compile('org.springframework.cloud:spring-cloud-starter-consul-discovery') {
+		exclude module: 'spring-boot-starter-tomcat'
+	}
+	compile 'org.springframework.cloud:spring-cloud-starter-feign'
+	compile 'org.springframework.cloud:spring-cloud-starter-hystrix'
+
+	testCompile 'org.springframework.boot:spring-boot-starter-test'
+}

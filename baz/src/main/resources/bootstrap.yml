@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: baz
+
+logging:
+  level:
+    root: ERROR
